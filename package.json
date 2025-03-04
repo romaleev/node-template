@@ -32,7 +32,10 @@
 		]
 	},
 	"keywords": [
-		"node-template"
+		"node-template",
+		"typescript",
+		"eslint",
+		"prettier"
 	],
 	"author": "Roman Malieiev <aromaleev@gmail.com>",
 	"license": "ISC",
@@ -51,7 +54,6 @@
 		"jest": "^29.7.0",
 		"jiti": "^2.4.2",
 		"lint-staged": "^15.4.3",
-		"nodemon": "^3.1.9",
 		"npm-check-updates": "^17.1.15",
 		"prettier": "^3.5.3",
 		"prettier-eslint": "^16.3.0",

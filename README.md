@@ -2,7 +2,7 @@
 
 ## Task
 
-Plain template powered with:
+Node.js template powered with:
 - Typescript
 - ESLint lint, fix, coverage
 - Prettier lint, fix, organize imports

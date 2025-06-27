@@ -10,7 +10,7 @@
 		"test:watch": "vitest --watch",
 		"test:coverage": "vitest run --coverage",
 		"lint": "tsc --noEmit && eslint 'lib/**/*.ts' && prettier 'lib/**/*.ts'",
-		"lintfix": "tsc --noEmit && eslint --fix 'lib/**/*.ts' && prettier --write 'lib/**/*.ts'",
+		"lint:fix": "tsc --noEmit && eslint --fix 'lib/**/*.ts' && prettier --write 'lib/**/*.ts'",
 		"update": "pnpm add npm-check-updates@latest -D && ncu -u && pnpm i && pnpm audit fix",
 		"prepare": "husky"
 	},
@@ -24,13 +24,6 @@
 	},
 	"engines": {
 		"node": ">=18.0.0"
-	},
-	"lint-staged": {
-		"lib/**/*.ts": [
-			"tsc --noEmit",
-			"eslint --fix",
-			"prettier --write --log-level warn"
-		]
 	},
 	"keywords": [
 		"node-template",

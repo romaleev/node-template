@@ -7,7 +7,7 @@ Node.js template powered with:
 - Typescript
 - ESLint lint, fix, coverage
 - Prettier lint, fix, organize imports
-- Pre-commit hook with lint staged
+- Pre-commit hook with lint and test
 - Editor config
 - Jest test
 - NPM check updates

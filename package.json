@@ -9,8 +9,8 @@
 		"test:run": "vitest run",
 		"test:watch": "vitest --watch",
 		"test:coverage": "vitest run --coverage",
-		"lint": "eslint 'lib/**/*.ts' && prettier 'lib/**/*.ts'",
-		"lintfix": "eslint --fix 'lib/**/*.ts' && prettier --write 'lib/**/*.ts'",
+		"lint": "tsc --noEmit && eslint 'lib/**/*.ts' && prettier 'lib/**/*.ts'",
+		"lintfix": "tsc --noEmit && eslint --fix 'lib/**/*.ts' && prettier --write 'lib/**/*.ts'",
 		"update": "pnpm add npm-check-updates@latest -D && ncu -u && pnpm i && pnpm audit fix",
 		"prepare": "husky"
 	},
@@ -27,7 +27,7 @@
 	},
 	"lint-staged": {
 		"lib/**/*.ts": [
-			"bash -c tsc --noEmit",
+			"tsc --noEmit",
 			"eslint --fix",
 			"prettier --write --log-level warn"
 		]

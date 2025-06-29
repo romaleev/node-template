@@ -9,8 +9,8 @@
 		"test:run": "vitest run",
 		"test:watch": "vitest --watch",
 		"test:coverage": "vitest run --coverage",
-		"lint": "tsc --noEmit && eslint 'lib/**/*.ts' && prettier 'lib/**/*.ts'",
-		"lint:fix": "tsc --noEmit && eslint --fix 'lib/**/*.ts' && prettier --write 'lib/**/*.ts'",
+		"lint": "tsc && eslint 'lib/**/*.ts' && prettier 'lib/**/*.ts'",
+		"lint:fix": "tsc && eslint --fix 'lib/**/*.ts' && prettier --write 'lib/**/*.ts'",
 		"update": "pnpm add npm-check-updates@latest -D && ncu -u && pnpm i && pnpm audit fix",
 		"prepare": "husky"
 	},

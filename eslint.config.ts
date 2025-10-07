@@ -20,5 +20,6 @@ export default tseslint.config(eslint.configs.recommended, tseslint.configs.reco
 	rules: {
 		'require-await': 'error',
 		'@typescript-eslint/no-floating-promises': 'error',
+		'@typescript-eslint/no-deprecated': 'error',
 	},
 })

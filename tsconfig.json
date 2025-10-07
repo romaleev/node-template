@@ -30,7 +30,7 @@
 		]
 	},
 	"include": [
-		"lib",
-		"tests"
+		"lib/**/*.ts",
+		"*.ts"
 	]
 }

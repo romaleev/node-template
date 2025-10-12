@@ -4,13 +4,14 @@
 
 Node.js template powered with:
 
-- Typescript
-- ESLint lint, fix, coverage
-- Prettier lint, fix, organize imports
-- Pre-commit hook with lint and test
+- Typescript and JavaScirpt
+- Pnpm package manager
+- Tsup bundler
+- Vitest test run, watch and coverage
+- ESLint lint and fix
+- Prettier lint, fix and organize imports
 - Editor config
-- Jest test
-- NPM check updates
+- Pre-commit hook with lint and test
 
 ## Installation
 
@@ -26,9 +27,13 @@ The application will automatically restart if you change any of the source files
 
 Run `pnpm build` to build the project. The build artifacts will be stored in the `dist/` directory
 
+## Prod
+
+Run `pnpm prod` to run built project from `dist/` directory
+
 ## Run tests
 
-Run `pnpm test:run` to execute unit tests
+Run `pnpm test` to execute unit tests
 
 Run `pnpm test:watch` to execute unit tests in watch mode
 
@@ -36,9 +41,7 @@ Run `pnpm test:coverage` to generate [coverage report](./coverage/index.html)
 
 ## Run code quality checks
 
-Run `pnpm lint` for code quality checks.
-
-Run `pnpm lintfix` for code quality fixes. It happens automatically in pre-commit hook.
+Run `pnpm lint` for code quality checks and fixes. It happens automatically in pre-commit hook.
 
 ## Update library versions
 

@@ -4,13 +4,14 @@
 	"description": "Node.js template",
 	"main": "dist/index.js",
 	"scripts": {
-		"start": "tsx watch lib/index.ts",
-		"build": "tsc lib/index.ts --outDir dist",
-		"test:run": "vitest run",
+		"start": "NODE_ENV=development tsx --watch src/index.ts",
+		"build": "tsup",
+		"prod": "NODE_ENV=production node dist/index.js",
+		"test": "vitest run",
 		"test:watch": "vitest --watch",
 		"test:coverage": "vitest run --coverage",
-		"lint": "tsc && eslint --fix {lib/**/*.ts,*.ts} && prettier --write {lib/**/*.ts,*.ts}",
-		"update": "pnpm add npm-check-updates@latest -D && ncu -u && pnpm i && pnpm audit fix && pnpm test:run",
+		"lint": "tsc && eslint --fix {src/**/*.ts,*.ts} && prettier --write {src/**/*.ts,*.ts}",
+		"update": "pnpm add npm-check-updates@latest -D && ncu -u && pnpm i && pnpm audit fix && pnpm test",
 		"prepare": "husky"
 	},
 	"repository": {
@@ -49,6 +50,7 @@
 		"prettier": "^3.6.2",
 		"prettier-eslint": "^16.4.2",
 		"prettier-plugin-organize-imports": "^4.3.0",
+		"tsup": "^8.5.0",
 		"tsx": "^4.20.6",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.46.0",

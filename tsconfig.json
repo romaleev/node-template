@@ -2,6 +2,9 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"moduleDetection": "force",
 		"lib": [
 			"esnext"
 		],
@@ -12,25 +15,20 @@
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"noFallthroughCasesInSwitch": true,
-		"module": "esnext",
-		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"noEmit": true,
 		"paths": {
-			"#lib/*": [
-				"lib/*"
+			"#src/*": [
+				"src/*"
 			],
-			"#tests/*": [
-				"src/tests/*"
-			]
 		},
 		"types": [
 			"vitest/globals"
 		]
 	},
 	"include": [
-		"lib/**/*.ts",
+		"src/**/*.ts",
 		"*.ts"
 	]
 }
